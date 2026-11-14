@@ -286,14 +286,6 @@ Download the selected GSE213216 samples into `data/external/GSE213216/`, then ru
 - Full numbers: `summary_and_results/PROJECT_SUMMARY.md` and `summary_and_results/tables/`.
 
 
-## Future Work
-
-- External validation of *CCL19*.
-- Larger external cohort covering more tissues.
-- Tuning of Random Forest and XGBoost.
-- Investigation of the four excluded EOR samples.
-- Systematic literature review, including a check of the *LYVE1*-associated genes. A proper PubMed search is still needed before any novelty claim.
-
 
 ## References
 
