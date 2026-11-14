@@ -40,7 +40,11 @@ the number of patients is small, and all predictions are **associations, not cau
 
 > **Note on baselines:** the baseline type differs between rows (subtype mean vs. technical metrics only), so the gaps should
 > not be compared across rows.
+### Overall Model Performance
 
+Comparison of prediction performance for LYVE1 and CCL19.
+
+![LYVE1 vs CCL19](figures/fig4_LYVE1_vs_CCL19_summary.png)
 ---
 
 ## Study Design
@@ -146,7 +150,12 @@ Mean of per-patient Spearman correlation (test patients only):
 - The three models perform similarly; with few patients and no tuning, **no model is claimed to be better than another**.
 - Models beat the subtype baseline in 8 of 10 *LYVE1* patients and in all 7 *CCL19* patients.
 - Per-patient Spearman ranges from 0.32 to 0.86 (*LYVE1*) and from 0.23 to 0.79 (*CCL19*).
+#### Per-Patient Model Performance
 
+Spearman correlation across held-out patients.
+
+![Per-Patient Spearman](figures/fig1_spearman_per_patient.png)
+  
 ### External validation of *LYVE1* (GSE213216)
 
 | Patient | Cells | *LYVE1*+ | Elastic Net | XGBoost | Technical only |
@@ -159,13 +168,29 @@ Mean of per-patient Spearman correlation (test patients only):
 | **Mean** | | | **0.553** | **0.547** | **0.142** |
 
 The pre-defined success criterion was met in **5 of 5 patients**. Performance was about 0.05 lower than internally, as expected for independent data.
+#### External Validation of LYVE1
+
+Model performance across five independent patients.
+
+![External Validation](figures/fig3_external_validation.png)
+
 
 ### ROC and precision-recall analysis
 
 ROC and precision-recall curves (expressing vs. not expressing, test patients pooled) are in `figures/` (figures 5 and 6).
 Simple baselines are close to chance. The AUC is computed on all cells of the group, so part of it reflects membership of the
 expression-rich subtype.
+#### ROC Curves
 
+Receiver Operating Characteristic curves for predicting target-gene expression.
+
+![ROC Curves](figures/fig5_roc_curves.png)
+
+#### Precision-Recall Curves
+
+Precision-recall performance across the evaluated models.
+
+![Precision Recall Curves](figures/fig6_precision_recall_curves.png)
 ### Robustness checks
 
 | Check | Result |
