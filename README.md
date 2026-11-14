@@ -22,9 +22,7 @@ the number of patients is small, and all predictions are **associations, not cau
 8. [Repository Structure](#repository-structure)
 9. [Getting Started](#getting-started)
 10. [Reproducibility Notes](#reproducibility-notes)
-11. [Future Work](#future-work)
-12. [Authors](#authors)
-13. [References](#references)
+11. [References](#references)
 
 ---
 
