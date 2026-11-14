@@ -1,8 +1,6 @@
 # Predicting LYVE1 and CCL19 Expression in Unseen Endometriosis Patients from Single-Cell RNA-seq
 
 > **Research
-> ## Project Overview
-![Project Workflow](images/workflow.png) 
 question:** Can machine learning predict the expression level of selected immune-regulatory genes
 > (*LYVE1* in macrophages, *CCL19* in perivascular/mural cells) in cells from **patients that were never used for training**,
 > using the expression of other genes?
